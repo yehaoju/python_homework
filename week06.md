@@ -1,19 +1,19 @@
 ## **总结关于字典、集合的所有方法**
 ### 1. 字典
-'''
-dict.clear()删除字典内所有元素
-dict.copy()返回一个字典的浅复制
-dict.get(key, default=None)返回指定键的值，如果值不在字典中返回default值
-dict.has_key(key)如果键在字典dict里返回true，否则返回false
-dict.items()以列表返回可遍历的(键, 值) 元组数组
-dict.keys()以列表返回一个字典所有的键
-dict.update(dict2)把字典dict2的键/值对更新到dict里
-dict.values()以列表返回字典中的所有值
-popitem()返回并删除字典中的最后一对键和值。
-pop(key[,default])删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。
-dict.setdefault(key, default=None)和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default
-dict.fromkeys(seq[, val])创建一个新字典，以序列 seq 中元素做字典的键，val 为字典所有键对应的初始值
-'''
+
+| dict.clear() | 删除字典内所有元素 |
+| dict.copy() | 返回一个字典的浅复制 |
+| dict.get(key, default=None) | 返回指定键的值，如果值不在字典中返回default值 |
+| dict.has_key(key) | 如果键在字典dict里返回true，否则返回false |
+| dict.items() | 以列表返回可遍历的(键, 值) 元组数组 |
+| dict.keys() | 以列表返回一个字典所有的键 |
+| dict.update(dict2) | 把字典dict2的键/值对更新到dict里 |
+| dict.values() | 以列表返回字典中的所有值 |
+| popitem() | 返回并删除字典中的最后一对键和值。 |
+| pop(key[,default]) | 删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。 |
+| dict.setdefault(key, default=None) | 和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default |
+| dict.fromkeys(seq[, val]) | 创建一个新字典，以序列 seq 中元素做字典的键，val 为字典所有键对应的初始值 |
+
 字典是另一种可变容器模型，且可存储任意类型对象。
 
 字典的每个键值 key=>value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中 ,格式如下所示：
